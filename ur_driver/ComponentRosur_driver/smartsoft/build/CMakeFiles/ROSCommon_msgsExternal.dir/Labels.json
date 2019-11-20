@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSCommon_msgsExternal"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSCommon_msgsExternal.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSCommon_msgsExternal-complete.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-install.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-mkdir.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-download.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-update.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-patch.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-configure.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-build.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-ROSCommon_msgsStep1.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSCommon_msgs/src/ROSCommon_msgsExternal-stamp/ROSCommon_msgsExternal-ROSCommon_msgsStep2.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ROSCommon_msgsExternal"
+		],
+		"name" : "ROSCommon_msgsExternal"
+	}
+}

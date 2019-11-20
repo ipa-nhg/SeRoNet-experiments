@@ -1,0 +1,15 @@
+# Target labels
+ SmartXmlExternal
+# Source files and their labels
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/CMakeFiles/SmartXmlExternal
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/CMakeFiles/SmartXmlExternal.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/CMakeFiles/SmartXmlExternal-complete.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-install.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-mkdir.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-download.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-update.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-patch.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-configure.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-build.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-SmartXmlStep1.rule
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/SmartXml/src/SmartXmlExternal-stamp/SmartXmlExternal-SmartXmlStep2.rule

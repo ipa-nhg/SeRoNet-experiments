@@ -1,0 +1,15 @@
+# Target labels
+ ROSRos_coreExternal
+# Source files and their labels
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSRos_coreExternal
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSRos_coreExternal.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSRos_coreExternal-complete.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-install.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-mkdir.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-download.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-update.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-patch.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-configure.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-build.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-ROSRos_coreStep1.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-ROSRos_coreStep2.rule

@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/SmartPropertyExternal"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/SmartPropertyExternal.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/SmartPropertyExternal-complete.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-install.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-mkdir.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-download.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-update.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-patch.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-configure.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-build.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-SmartPropertyStep1.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/SmartProperty/src/SmartPropertyExternal-stamp/SmartPropertyExternal-SmartPropertyStep2.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"SmartPropertyExternal"
+		],
+		"name" : "SmartPropertyExternal"
+	}
+}

@@ -1,0 +1,3 @@
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/ROSUr_msgsConfigVersion.cmake
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/ROSUr_msgsConfig.cmake
+/home/nhg/workspace/ROSUr_msgs/smartsoft/build/ROSUr_msgsTargets.cmake

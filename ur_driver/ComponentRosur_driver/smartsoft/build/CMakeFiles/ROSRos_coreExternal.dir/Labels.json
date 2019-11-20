@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSRos_coreExternal"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSRos_coreExternal.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/ROSRos_coreExternal-complete.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-install.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-mkdir.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-download.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-update.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-patch.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-configure.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-build.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-ROSRos_coreStep1.rule"
+		},
+		{
+			"file" : "/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/ROSRos_core/src/ROSRos_coreExternal-stamp/ROSRos_coreExternal-ROSRos_coreStep2.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ROSRos_coreExternal"
+		],
+		"name" : "ROSRos_coreExternal"
+	}
+}

@@ -1,0 +1,15 @@
+# Target labels
+ CommBasicObjectsExternal
+# Source files and their labels
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/CommBasicObjectsExternal
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/CommBasicObjectsExternal.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CMakeFiles/CommBasicObjectsExternal-complete.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-install.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-mkdir.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-download.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-update.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-patch.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-configure.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-build.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-CommBasicObjectsStep1.rule
+/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/CommBasicObjects/src/CommBasicObjectsExternal-stamp/CommBasicObjectsExternal-CommBasicObjectsStep2.rule
