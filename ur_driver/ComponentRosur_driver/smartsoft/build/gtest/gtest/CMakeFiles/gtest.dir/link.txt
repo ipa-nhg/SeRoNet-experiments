@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/gtest/gtest/src -lpthread -Wl,-rpath,/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/gtest/gtest/src 

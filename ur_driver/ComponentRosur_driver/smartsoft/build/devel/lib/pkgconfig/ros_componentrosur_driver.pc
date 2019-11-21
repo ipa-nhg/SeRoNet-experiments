@@ -1,8 +1,0 @@
-prefix=/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/devel
-
-Name: ros_componentrosur_driver
-Description: Description of ros_componentrosur_driver
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/nhg/workspace/ComponentRosur_driver/smartsoft/build/devel/lib 
-Requires: 

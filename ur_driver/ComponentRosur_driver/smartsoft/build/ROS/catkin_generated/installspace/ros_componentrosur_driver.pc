@@ -1,8 +1,0 @@
-prefix=/home/nhg/SOFTWARE/smartsoft
-
-Name: ros_componentrosur_driver
-Description: Description of ros_componentrosur_driver
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/nhg/SOFTWARE/smartsoft/lib 
-Requires: 
