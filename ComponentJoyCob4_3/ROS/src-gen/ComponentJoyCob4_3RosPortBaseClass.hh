@@ -21,12 +21,14 @@
 #define ROS_PORT_BASE_CLASS_H_
 
 #include <ros/ros.h>
+#include <sensor_msgs/Joy.h>
 
 class ComponentJoyCob4_3RosPortBaseClass {
 public:
 	ComponentJoyCob4_3RosPortBaseClass() { };
 	virtual ~ComponentJoyCob4_3RosPortBaseClass() { }
-	
+
+	void publish_ros_msgs(const sensor_msgs::Joy &msg);
 	ros::Publisher _joy_pub;
 };
 
