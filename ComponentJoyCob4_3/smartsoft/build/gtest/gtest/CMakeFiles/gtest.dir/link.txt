@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/nhg/Desktop/Release_SeRoNet_v1.1/SeRoNet-Tooling-v1.1/ws/ComponentJoyCob4_3/smartsoft/build/gtest/gtest/src -lpthread -Wl,-rpath,/home/nhg/Desktop/Release_SeRoNet_v1.1/SeRoNet-Tooling-v1.1/ws/ComponentJoyCob4_3/smartsoft/build/gtest/gtest/src 

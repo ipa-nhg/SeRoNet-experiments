@@ -48,8 +48,8 @@ ComponentJoyCob4_3::ComponentJoyCob4_3()
 	connections.component.useLogger = false;
 	
 	connections.joyIn.wiringName = "joyIn";
-	connections.joyIn.serverName = "SmartJoystickServer";
-	connections.joyIn.serviceName = "JoystickServcieOut";
+	connections.joyIn.serverName = "unknown";
+	connections.joyIn.serviceName = "unknown";
 	connections.joyIn.interval = 1;
 	connections.joyIn.roboticMiddleware = "ACE_SmartSoft";
 	connections.cob4_3Activity.minActFreq = 0.0;

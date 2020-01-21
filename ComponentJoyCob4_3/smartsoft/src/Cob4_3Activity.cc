@@ -37,24 +37,6 @@ void Cob4_3Activity::on_joyIn(const CommBasicObjects::CommJoystick &input)
 	// - do not use longer blocking calls here since this upcall blocks the InputPort joyIn
 	// - if you need to implement a long-running procedure, do so within the on_execute() method and in
 	//   there, use the method joyInGetUpdate(input) to get a copy of the input object
-	//std::unique_lock<std::mutex> lck (mtx);
-	//ComponentJoyCob4_3RosPortCallbacks comp;
-	if (input.getButtons()!=0 or input.get_x()!=0 or input.get_y()!=0 or input.get_y2()!=0){
-		sensor_msgs::Joy joy_msg;
-		joy_msg.axes.resize(6);
-		joy_msg.axes[0]=-input.get_x();
-		joy_msg.axes[1]=-input.get_y();
-		joy_msg.axes[3]=-input.get_x2();
-		joy_msg.axes[4]=input.get_y2();
-
-		joy_msg.buttons.resize(17);
-		for(size_t btn=0; btn < 8; ++btn) {
-			joy_msg.buttons[btn]=input.get_button(btn);
-		}
-
-		COMP -> rosPorts -> publish_ros_msgs(joy_msg);
-	}
-
 }
 
 int Cob4_3Activity::on_entry()
@@ -75,12 +57,12 @@ int Cob4_3Activity::on_execute()
 	status = this->joyInGetUpdate(joyInObject);
 	if(status != Smart::SMART_OK) {
 		std::cerr << status << std::endl;
-		return 0;
-	//} else {
-	//	std::cout << "received: " << joyInObject << std::endl;
+		// return 0;
+	} else {
+		std::cout << "received: " << joyInObject << std::endl;
 	}
 
-	//std::cout << "Hello from Cob4_3Activity " << std::endl;
+	std::cout << "Hello from Cob4_3Activity " << std::endl;
 
 	// it is possible to return != 0 (e.g. when the task detects errors), then the outer loop breaks and the task stops
 	return 0;

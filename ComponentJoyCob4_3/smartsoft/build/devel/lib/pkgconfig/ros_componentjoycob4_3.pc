@@ -1,8 +1,0 @@
-prefix=/home/nhg/Desktop/Release_SeRoNet_v1.1/SeRoNet-Tooling-v1.1/ws/ComponentJoyCob4_3/smartsoft/build/devel
-
-Name: ros_componentjoycob4_3
-Description: Description of ros_componentjoycob4_3
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/nhg/Desktop/Release_SeRoNet_v1.1/SeRoNet-Tooling-v1.1/ws/ComponentJoyCob4_3/smartsoft/build/devel/lib 
-Requires: 
