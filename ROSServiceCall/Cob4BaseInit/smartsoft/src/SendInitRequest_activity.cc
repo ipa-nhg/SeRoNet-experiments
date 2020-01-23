@@ -41,9 +41,8 @@ int SendInitRequest_activity::on_execute()
 {
 	// do initialization procedures here, which are called once, each time the task is started
 	// it is possible to return != 0 (e.g. when initialization fails) then the task is not executed further
-	ROSRos_core::Std_srvs_SetBoolRequest ask;
-	ROSRos_core::Std_srvs_SetBoolResponse response;
-	ask.setData(true);
+	ROSRos_core::Std_srvs_TriggerRequest ask;
+	ROSRos_core::Std_srvs_TriggerResponse response;
 
 	COMP ->triggerQueryServiceReq->query(ask, response);
 	std::cout<<"Got triggerQueryServiceReq Query Answer Sucess: "<<response.getSuccess()<<std::endl;
