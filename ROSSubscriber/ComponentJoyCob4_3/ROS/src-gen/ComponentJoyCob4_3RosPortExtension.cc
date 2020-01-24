@@ -45,6 +45,11 @@ void ComponentJoyCob4_3RosPortExtension::initialize(ComponentJoyCob4_3 *componen
 	component->rosPorts = this;
 	
 	_joy_pub = nh->advertise<sensor_msgs::Joy>("/joy", 10);
+
+}
+
+void ComponentJoyCob4_3RosPortBaseClass::publish_ros_msgs (const sensor_msgs::Joy &msg){
+	_joy_pub.publish(msg);
 }
 
 int ComponentJoyCob4_3RosPortExtension::onStartup()
