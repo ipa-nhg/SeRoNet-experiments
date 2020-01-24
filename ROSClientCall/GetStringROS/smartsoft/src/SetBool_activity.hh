@@ -18,6 +18,11 @@
 #define _SETBOOL_ACTIVITY_HH
 
 #include "SetBool_activityCore.hh"
+#include "ROSRos_core/Std_srvs_SetBoolResponse.hh"
+#include "ROSRos_core/Std_srvs_SetBoolRequest.hh"
+#include "std_srvs/SetBool.h"
+
+
 
 class SetBool_activity  : public SetBool_activityCore
 {
@@ -25,7 +30,7 @@ private:
 public:
 	SetBool_activity(SmartACE::SmartComponent *comp);
 	virtual ~SetBool_activity();
-	
+	std_srvs::SetBool::Response callServiceQuery(bool request);
 	virtual int on_entry();
 	virtual int on_execute();
 	virtual int on_exit();
