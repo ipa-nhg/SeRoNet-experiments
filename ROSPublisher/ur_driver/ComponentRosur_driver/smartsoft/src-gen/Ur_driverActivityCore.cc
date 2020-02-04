@@ -36,6 +36,9 @@ Ur_driverActivityCore::~Ur_driverActivityCore()
 {
 }
 
+void Ur_driverActivityCore::joint_states_sub_cb (const sensor_msgs::JointState::ConstPtr &msg) {
+	// implement this method
+}
 
 void Ur_driverActivityCore::notify_all_interaction_observers() {
 	std::unique_lock<std::mutex> lock(interaction_observers_mutex);

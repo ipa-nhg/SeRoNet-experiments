@@ -29,12 +29,14 @@
 class ComponentRosur_driverPortFactoryInterface;
 class ComponentRosur_driverExtension;
 
+// includes for ComponentRosur_driverROSExtension
+#include "ComponentRosur_driverRosPortBaseClass.hh"
+
+// includes for OpcUaBackendComponentGeneratorExtension
+
 // includes for PlainOpcUaComponentRosur_driverExtension
 // include plain OPC UA device clients
 // include plain OPC UA status servers
-
-// includes for ComponentRosur_driverROSExtension
-#include "ComponentRosur_driverRosPortBaseClass.hh"
 
 
 // include communication objects
@@ -45,8 +47,8 @@ class ComponentRosur_driverExtension;
 #include "Ur_driverActivity.hh"
 // include UpcallManagers
 
-// include input-handler
-// include input-handler
+// include input-handler(s)
+// include request-handler(s)
 
 // include handler
 #include "CompHandler.hh"
@@ -103,10 +105,12 @@ public:
 	
 	// define request-handlers
 	
-	// definitions of PlainOpcUaComponentRosur_driverExtension
-	
 	// definitions of ComponentRosur_driverROSExtension
 	ComponentRosur_driverRosPortBaseClass *rosPorts;
+	
+	// definitions of OpcUaBackendComponentGeneratorExtension
+	
+	// definitions of PlainOpcUaComponentRosur_driverExtension
 	
 	
 	// define default slave ports
@@ -211,9 +215,11 @@ public:
 	
 		//--- client port parameter ---
 		
-		// -- parameters for PlainOpcUaComponentRosur_driverExtension
-		
 		// -- parameters for ComponentRosur_driverROSExtension
+		
+		// -- parameters for OpcUaBackendComponentGeneratorExtension
+		
+		// -- parameters for PlainOpcUaComponentRosur_driverExtension
 		
 	} connections;
 };
