@@ -63,10 +63,13 @@ roboticMiddleware ACE_SmartSoft
 # client port parameter
 
 ##########################
-## parameters of PlainOpcUaComponentRosur_driverExtension
-
+## parameters of ComponentRosur_driverROSExtension
 
 ##########################
-## parameters of ComponentRosur_driverROSExtension
+## parameters of OpcUaBackendComponentGeneratorExtension
+
+##########################
+## parameters of PlainOpcUaComponentRosur_driverExtension
+
 
 

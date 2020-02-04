@@ -56,10 +56,12 @@ ComponentRosur_driver::ComponentRosur_driver()
 	connections.ur_driverActivity.priority = -1;
 	connections.ur_driverActivity.cpuAffinity = -1;
 	
-	// initialize members of PlainOpcUaComponentRosur_driverExtension
-	
 	// initialize members of ComponentRosur_driverROSExtension
 	rosPorts = 0;
+	
+	// initialize members of OpcUaBackendComponentGeneratorExtension
+	
+	// initialize members of PlainOpcUaComponentRosur_driverExtension
 	
 }
 
@@ -146,9 +148,11 @@ void ComponentRosur_driver::init(int argc, char *argv[])
 		loadParameter(argc, argv);
 		
 		
-		// initializations of PlainOpcUaComponentRosur_driverExtension
-		
 		// initializations of ComponentRosur_driverROSExtension
+		
+		// initializations of OpcUaBackendComponentGeneratorExtension
+		
+		// initializations of PlainOpcUaComponentRosur_driverExtension
 		
 		
 		// initialize all registered port-factories
@@ -345,9 +349,11 @@ void ComponentRosur_driver::fini()
 		portFactory->second->destroy();
 	}
 	
-	// destruction of PlainOpcUaComponentRosur_driverExtension
-	
 	// destruction of ComponentRosur_driverROSExtension
+	
+	// destruction of OpcUaBackendComponentGeneratorExtension
+	
+	// destruction of PlainOpcUaComponentRosur_driverExtension
 	
 }
 
@@ -448,9 +454,11 @@ void ComponentRosur_driver::loadParameter(int argc, char *argv[])
 			parameter.getInteger("ur_driverActivity", "cpuAffinity", connections.ur_driverActivity.cpuAffinity);
 		}
 		
-		// load parameters for PlainOpcUaComponentRosur_driverExtension
-		
 		// load parameters for ComponentRosur_driverROSExtension
+		
+		// load parameters for OpcUaBackendComponentGeneratorExtension
+		
+		// load parameters for PlainOpcUaComponentRosur_driverExtension
 		
 		
 		// load parameters for all registered component-extensions
