@@ -18,14 +18,21 @@
 #define _UR_DRIVERACTIVITY_HH
 
 #include "Ur_driverActivityCore.hh"
+#include <ROSCommon_msgs/Sensor_msgs_JointState.hh>
+#include <sensor_msgs/JointState.h>
+#include <mutex>
+
 
 class Ur_driverActivity  : public Ur_driverActivityCore
 {
 private:
+	std::mutex mtx;
+	ROSCommon_msgs::Sensor_msgs_JointState joint_statesOutDataObject;
+
 public:
 	Ur_driverActivity(SmartACE::SmartComponent *comp);
 	virtual ~Ur_driverActivity();
-	
+	void update_joint_state_mgs(const sensor_msgs::JointState::ConstPtr &msg);
 	virtual int on_entry();
 	virtual int on_execute();
 	virtual int on_exit();

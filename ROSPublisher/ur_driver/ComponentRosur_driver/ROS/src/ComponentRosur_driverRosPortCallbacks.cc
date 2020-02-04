@@ -29,7 +29,7 @@ ComponentRosur_driverRosPortCallbacks::~ComponentRosur_driverRosPortCallbacks() 
 void ComponentRosur_driverRosPortCallbacks::joint_states_sub_cb (const sensor_msgs::JointState::ConstPtr &msg)
 {
 	// for implementing this method, you can use the "COMP->" macro to access the component's class members
-	COMP->ur_driverActivity->joint_states_sub_cb(msg);
+	COMP->ur_driverActivity->update_joint_state_mgs(msg);
 	
 }
 
