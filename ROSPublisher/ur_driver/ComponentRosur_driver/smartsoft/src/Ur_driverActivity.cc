@@ -16,7 +16,8 @@
 //--------------------------------------------------------------------------
 #include "Ur_driverActivity.hh"
 #include "ComponentRosur_driver.hh"
-
+#include "ROSRos_core/Std_msgs_Header.hh"
+#include "CommBasicObjects/CommTimeStampCore.hh"
 #include <iostream>
 
 Ur_driverActivity::Ur_driverActivity(SmartACE::SmartComponent *comp) 
@@ -30,6 +31,21 @@ Ur_driverActivity::~Ur_driverActivity()
 }
 
 
+void Ur_driverActivity::update_joint_state_mgs(const sensor_msgs::JointState::ConstPtr &msg){
+	std::unique_lock<std::mutex> lck (mtx);
+	ROSRos_core::Std_msgs_Header header;
+	CommBasicObjects::CommTimeStamp time;
+	header.setFrame_id(msg->header.frame_id);
+	time.setSec(msg->header.stamp.sec);
+	time.setUsec(msg->header.stamp.nsec);
+	header.setStamp(time);
+	header.setSeq(msg->header.seq);
+	joint_statesOutDataObject.setHeader(header);
+	joint_statesOutDataObject.setName(msg->name);
+	joint_statesOutDataObject.setPosition(msg->position);
+	joint_statesOutDataObject.setVelocity(msg->velocity);
+	joint_statesOutDataObject.setEffort(msg->effort);
+}
 
 int Ur_driverActivity::on_entry()
 {
@@ -44,9 +60,8 @@ int Ur_driverActivity::on_execute()
 	// also do not use blocking calls which do not result from smartsoft kernel
 	
 	// to get the incoming data, use this methods:
-	Smart::StatusCode status;
-
-	std::cout << "Hello from Ur_driverActivity " << std::endl;
+	Smart::StatusCode status = this -> joint_statesOutPut(joint_statesOutDataObject);
+	std::cout << "Joint State Update " <<  joint_statesOutDataObject << std::endl;
 
 	// it is possible to return != 0 (e.g. when the task detects errors), then the outer loop breaks and the task stops
 	return 0;
