@@ -30,6 +30,19 @@ SetBool_activity::~SetBool_activity()
 }
 
 
+std_srvs::SetBool::Response SetBool_activity::callServiceQuery(bool request){
+	ROSRos_core::Std_srvs_SetBoolRequest ask;
+	ROSRos_core::Std_srvs_SetBoolResponse answer;
+
+	ask.setData(request);
+	COMP->setBoolQueryServiceReq->query(ask, answer);
+
+	std_srvs::SetBool::Response ros_srv;
+	ros_srv.success = answer.getSuccess();
+	ros_srv.message = answer.getMessage();
+
+	return ros_srv;
+}
 
 int SetBool_activity::on_entry()
 {
@@ -46,7 +59,7 @@ int SetBool_activity::on_execute()
 	// to get the incoming data, use this methods:
 	Smart::StatusCode status;
 
-	std::cout << "Hello from SetBool_activity " << std::endl;
+	//std::cout << "Hello from SetBool_activity " << std::endl;
 
 	// it is possible to return != 0 (e.g. when the task detects errors), then the outer loop breaks and the task stops
 	return 0;
