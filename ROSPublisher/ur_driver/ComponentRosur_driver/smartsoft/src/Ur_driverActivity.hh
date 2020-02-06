@@ -16,6 +16,7 @@
 //--------------------------------------------------------------------------
 #ifndef _UR_DRIVERACTIVITY_HH
 #define _UR_DRIVERACTIVITY_HH
+#include <mutex>
 
 #include "Ur_driverActivityCore.hh"
 #include <sensor_msgs/JointState.h>
@@ -26,7 +27,8 @@ private:
 public:
 	Ur_driverActivity(SmartACE::SmartComponent *comp);
 	virtual ~Ur_driverActivity();
-	
+	std::mutex mtx;
+	ROSCommon_msgs::Sensor_msgs_JointState joint_statesOutDataObject;
 	virtual int on_entry();
 	virtual int on_execute();
 	virtual int on_exit();
