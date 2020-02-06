@@ -26,7 +26,6 @@
 // include all interaction-observer interfaces
 #include <Ur_driverActivityObserverInterface.hh>
 
-#include <sensor_msgs/JointState.h>
 
 class Ur_driverActivityCore
 :	public SmartACE::ManagedTask
@@ -88,6 +87,5 @@ public:
 		return currentUpdateCount;
 	}
 	
-	void joint_states_sub_cb (const sensor_msgs::JointState::ConstPtr &msg);
 };
 #endif

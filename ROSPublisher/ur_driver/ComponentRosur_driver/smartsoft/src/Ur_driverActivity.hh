@@ -18,6 +18,7 @@
 #define _UR_DRIVERACTIVITY_HH
 
 #include "Ur_driverActivityCore.hh"
+#include <sensor_msgs/JointState.h>
 
 class Ur_driverActivity  : public Ur_driverActivityCore
 {
@@ -29,6 +30,7 @@ public:
 	virtual int on_entry();
 	virtual int on_execute();
 	virtual int on_exit();
+	void joint_states_sub_cb (const sensor_msgs::JointState::ConstPtr &msg);
 };
 
 #endif

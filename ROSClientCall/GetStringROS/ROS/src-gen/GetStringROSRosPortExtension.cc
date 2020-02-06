@@ -66,6 +66,7 @@ int GetStringROSRosPortExtension::onShutdown(const std::chrono::steady_clock::du
 
 void GetStringROSRosPortExtension::destroy()
 {
+	delete _set_bool;
 	delete nh;
 	delete callbacksPtr;
 }

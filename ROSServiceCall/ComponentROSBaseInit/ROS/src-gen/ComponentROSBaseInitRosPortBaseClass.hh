@@ -22,6 +22,9 @@
 
 #include <ros/ros.h>
 
+#include <std_srvs/Trigger.h>
+
+
 class ComponentROSBaseInitRosPortBaseClass {
 public:
 	ComponentROSBaseInitRosPortBaseClass() { };

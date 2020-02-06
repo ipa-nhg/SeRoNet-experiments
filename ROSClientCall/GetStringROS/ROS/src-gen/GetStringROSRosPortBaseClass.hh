@@ -22,6 +22,9 @@
 
 #include <ros/ros.h>
 
+#include <std_srvs/SetBool.h>
+
+
 class GetStringROSRosPortBaseClass {
 public:
 	GetStringROSRosPortBaseClass() { };

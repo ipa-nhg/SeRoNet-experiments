@@ -30,7 +30,9 @@ Ur_driverActivity::~Ur_driverActivity()
 }
 
 
-
+void Ur_driverActivity::joint_states_sub_cb (const sensor_msgs::JointState::ConstPtr &msg) {
+	// implement this method
+}
 int Ur_driverActivity::on_entry()
 {
 	// do initialization procedures here, which are called once, each time the task is started
