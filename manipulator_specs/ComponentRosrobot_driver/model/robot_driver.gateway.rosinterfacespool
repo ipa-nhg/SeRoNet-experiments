@@ -1,0 +1,14 @@
+RosInterfacesPool {
+	RosSubscriber _joint_states_sub { topicName "/joint_states" type "sensor_msgs.JointState" }
+	RosSubscriber _arm_controller_state_sub { topicName "/arm_controller/state" type "control_msgs.JointTrajectoryControllerState" }
+	RosPublisher _arm_controller_command_pub { topicName "/arm_controller/command" type "trajectory_msgs.JointTrajectory" }
+	RosPublisher _arm_controller_joint_group_position_controller_command_pub { topicName "/arm_controller/joint_group_position_controller/command" type "std_msgs.Float64MultiArray" }
+	RosSrvClient _controller_manager_switch_controller_srvcli { srvName "/controller_manager/switch_controller" type "controller_manager_msgs.SwitchController" }
+	RosSrvClient _arm_controller_query_state_srvcli { srvName "/arm_controller/query_state" type "control_msgs.QueryTrajectoryState" }
+	RosSrvClient _controller_manager_list_controller_types_srvcli { srvName "/controller_manager/list_controller_types" type "controller_manager_msgs.ListControllerTypes" }
+	RosSrvClient _controller_manager_load_controller_srvcli { srvName "/controller_manager/load_controller" type "controller_manager_msgs.LoadController" }
+	RosSrvClient _controller_manager_list_controllers_srvcli { srvName "/controller_manager/list_controllers" type "controller_manager_msgs.ListControllers" }
+	RosSrvClient _controller_manager_unload_controller_srvcli { srvName "/controller_manager/unload_controller" type "controller_manager_msgs.UnloadController" }
+	RosSrvClient _controller_manager_reload_controller_libraries_srvcli { srvName "/controller_manager/reload_controller_libraries" type "controller_manager_msgs.ReloadControllerLibraries" }
+	RosActionClient _arm_controller_follow_joint_trajectory_command_actcli { actionName "/arm_controller/follow_joint_trajectory/command" type "control_msgs.FollowJointTrajectory" }
+}

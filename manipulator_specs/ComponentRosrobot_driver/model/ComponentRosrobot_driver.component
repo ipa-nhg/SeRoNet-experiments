@@ -1,0 +1,24 @@
+ComponentDefinition ComponentRosrobot_driver {
+
+	MixedPortROS _arm_controller_state_sub
+	MixedPortROS _joint_states_sub
+	MixedPortROS _arm_controller_command_pub
+	MixedPortROS _arm_controller_joint_group_position_controller_command_pub
+
+	OutputPort arm_controller_stateOut implements ROSControl_msgs.JointTrajectoryControllerStateService realizedBy robot_driverActivity {}
+	OutputPort joint_statesOut implements ROSCommon_msgs.JointStateService realizedBy robot_driverActivity {}
+	InputPort arm_controller_commandIn implements ROSCommon_msgs.JointTrajectoryService {}
+	InputPort arm_controller_joint_group_position_controller_commandIn implements ROSRos_core.Float64MultiArrayService {}
+	
+
+
+	Activity robot_driverActivity {
+		MixedPortROSLink _arm_controller_state_sub
+		MixedPortROSLink _joint_states_sub
+		MixedPortROSLink _arm_controller_command_pub
+		InputPortLink arm_controller_commandIn {}
+		MixedPortROSLink _arm_controller_joint_group_position_controller_command_pub
+		InputPortLink arm_controller_joint_group_position_controller_commandIn {}
+	}
+
+}

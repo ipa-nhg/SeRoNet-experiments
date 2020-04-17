@@ -1,0 +1,293 @@
+CommObjectsRepository ROSControl_msgs version 1.0.0 {
+
+
+CommObject Control_msgs_FollowJointTrajectoryAction {
+	action_goal : Control_msgs_FollowJointTrajectoryActionGoal
+	action_result : Control_msgs_FollowJointTrajectoryActionResult
+	action_feedback : Control_msgs_FollowJointTrajectoryActionFeedback
+}
+
+CommObject Control_msgs_FollowJointTrajectoryActionFeedback {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	feedback : Control_msgs_FollowJointTrajectoryFeedback
+}
+
+CommObject Control_msgs_FollowJointTrajectoryActionGoal {
+	header : ROSRos_core.Std_msgs_Header
+	goal_id : ROSCommon_msgs.Actionlib_msgs_GoalID
+	goal : Control_msgs_FollowJointTrajectoryGoal
+}
+
+CommObject Control_msgs_FollowJointTrajectoryActionResult {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	result : Control_msgs_FollowJointTrajectoryResult
+}
+
+CommObject Control_msgs_FollowJointTrajectoryFeedback {
+	header : ROSRos_core.Std_msgs_Header
+	joint_names : String[*]
+	desired : ROSCommon_msgs.Trajectory_msgs_JointTrajectoryPoint
+	actual : ROSCommon_msgs.Trajectory_msgs_JointTrajectoryPoint
+	error : ROSCommon_msgs.Trajectory_msgs_JointTrajectoryPoint
+}
+
+CommObject Control_msgs_FollowJointTrajectoryGoal {
+	trajectory : ROSCommon_msgs.Trajectory_msgs_JointTrajectory
+	path_tolerance : Control_msgs_JointTolerance[*]
+	goal_tolerance : Control_msgs_JointTolerance[*]
+	goal_time_tolerance : CommBasicObjects.CommTimeStamp
+}
+
+CommObject Control_msgs_FollowJointTrajectoryResult {
+	error_code : Int32
+	error_string : String
+}
+Enumeration Control_msgs_FollowJointTrajectoryResultType {
+	SUCCESSFUL = 0
+	INVALID_GOAL = 1
+	INVALID_JOINTS = 2
+	OLD_HEADER_TIMESTAMP = 3
+	PATH_TOLERANCE_VIOLATED = 4
+	GOAL_TOLERANCE_VIOLATED = 5
+}
+
+CommObject Control_msgs_GripperCommand {
+	position : Double
+	max_effort : Double
+}
+
+CommObject Control_msgs_GripperCommandAction {
+	action_goal : Control_msgs_GripperCommandActionGoal
+	action_result : Control_msgs_GripperCommandActionResult
+	action_feedback : Control_msgs_GripperCommandActionFeedback
+}
+
+CommObject Control_msgs_GripperCommandActionFeedback {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	feedback : Control_msgs_GripperCommandFeedback
+}
+
+CommObject Control_msgs_GripperCommandActionGoal {
+	header : ROSRos_core.Std_msgs_Header
+	goal_id : ROSCommon_msgs.Actionlib_msgs_GoalID
+	goal : Control_msgs_GripperCommandGoal
+}
+
+CommObject Control_msgs_GripperCommandActionResult {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	result : Control_msgs_GripperCommandResult
+}
+
+CommObject Control_msgs_GripperCommandFeedback {
+	position : Double
+	effort : Double
+	stalled : Boolean
+	reached_goal : Boolean
+}
+
+CommObject Control_msgs_GripperCommandGoal {
+	command : Control_msgs_GripperCommand
+}
+
+CommObject Control_msgs_GripperCommandResult {
+	position : Double
+	effort : Double
+	stalled : Boolean
+	reached_goal : Boolean
+}
+
+CommObject Control_msgs_JointControllerState {
+	header : ROSRos_core.Std_msgs_Header
+	set_point : Double
+	process_value : Double
+	process_value_dot : Double
+	error : Double
+	time_step : Double
+	command : Double
+	p : Double
+	i : Double
+	d : Double
+	i_clamp : Double
+	antiwindup : Boolean
+}
+
+CommObject Control_msgs_JointJog {
+	header : ROSRos_core.Std_msgs_Header
+	joint_names : String[*]
+	displacements : Double[*]
+	velocities : Double[*]
+	duration : Double
+}
+
+CommObject Control_msgs_JointTolerance {
+	name : String
+	position : Double
+	velocity : Double
+	acceleration : Double
+}
+
+CommObject Control_msgs_JointTrajectoryAction {
+	action_goal : Control_msgs_JointTrajectoryActionGoal
+	action_result : Control_msgs_JointTrajectoryActionResult
+	action_feedback : Control_msgs_JointTrajectoryActionFeedback
+}
+
+CommObject Control_msgs_JointTrajectoryActionFeedback {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	feedback : Control_msgs_JointTrajectoryFeedback
+}
+
+CommObject Control_msgs_JointTrajectoryActionGoal {
+	header : ROSRos_core.Std_msgs_Header
+	goal_id : ROSCommon_msgs.Actionlib_msgs_GoalID
+	goal : Control_msgs_JointTrajectoryGoal
+}
+
+CommObject Control_msgs_JointTrajectoryActionResult {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	result : Control_msgs_JointTrajectoryResult
+}
+
+CommObject Control_msgs_JointTrajectoryControllerState {
+	header : ROSRos_core.Std_msgs_Header
+	joint_names : String[*]
+	desired : ROSCommon_msgs.Trajectory_msgs_JointTrajectoryPoint
+	actual : ROSCommon_msgs.Trajectory_msgs_JointTrajectoryPoint
+	error : ROSCommon_msgs.Trajectory_msgs_JointTrajectoryPoint
+}
+
+CommObject Control_msgs_JointTrajectoryFeedback {
+	dummy : CommBasicObjects.CommVoid
+}
+
+CommObject Control_msgs_JointTrajectoryGoal {
+	trajectory : ROSCommon_msgs.Trajectory_msgs_JointTrajectory
+}
+
+CommObject Control_msgs_JointTrajectoryResult {
+	dummy : CommBasicObjects.CommVoid
+}
+
+CommObject Control_msgs_PidState {
+	header : ROSRos_core.Std_msgs_Header
+	timestep : CommBasicObjects.CommTimeStamp
+	error : Double
+	error_dot : Double
+	p_error : Double
+	i_error : Double
+	d_error : Double
+	p_term : Double
+	i_term : Double
+	d_term : Double
+	i_max : Double
+	i_min : Double
+	output : Double
+}
+
+CommObject Control_msgs_PointHeadAction {
+	action_goal : Control_msgs_PointHeadActionGoal
+	action_result : Control_msgs_PointHeadActionResult
+	action_feedback : Control_msgs_PointHeadActionFeedback
+}
+
+CommObject Control_msgs_PointHeadActionFeedback {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	feedback : Control_msgs_PointHeadFeedback
+}
+
+CommObject Control_msgs_PointHeadActionGoal {
+	header : ROSRos_core.Std_msgs_Header
+	goal_id : ROSCommon_msgs.Actionlib_msgs_GoalID
+	goal : Control_msgs_PointHeadGoal
+}
+
+CommObject Control_msgs_PointHeadActionResult {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	result : Control_msgs_PointHeadResult
+}
+
+CommObject Control_msgs_PointHeadFeedback {
+	pointing_angle_error : Double
+}
+
+CommObject Control_msgs_PointHeadGoal {
+	target : ROSCommon_msgs.Geometry_msgs_PointStamped
+	pointing_axis : ROSCommon_msgs.Geometry_msgs_Vector3
+	pointing_frame : String
+	min_duration : CommBasicObjects.CommTimeStamp
+	max_velocity : Double
+}
+
+CommObject Control_msgs_PointHeadResult {
+	dummy : CommBasicObjects.CommVoid
+}
+
+CommObject Control_msgs_SingleJointPositionAction {
+	action_goal : Control_msgs_SingleJointPositionActionGoal
+	action_result : Control_msgs_SingleJointPositionActionResult
+	action_feedback : Control_msgs_SingleJointPositionActionFeedback
+}
+
+CommObject Control_msgs_SingleJointPositionActionFeedback {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	feedback : Control_msgs_SingleJointPositionFeedback
+}
+
+CommObject Control_msgs_SingleJointPositionActionGoal {
+	header : ROSRos_core.Std_msgs_Header
+	goal_id : ROSCommon_msgs.Actionlib_msgs_GoalID
+	goal : Control_msgs_SingleJointPositionGoal
+}
+
+CommObject Control_msgs_SingleJointPositionActionResult {
+	header : ROSRos_core.Std_msgs_Header
+	status : ROSCommon_msgs.Actionlib_msgs_GoalStatus
+	result : Control_msgs_SingleJointPositionResult
+}
+
+CommObject Control_msgs_SingleJointPositionFeedback {
+	header : ROSRos_core.Std_msgs_Header
+	position : Double
+	velocity : Double
+	error : Double
+}
+
+CommObject Control_msgs_SingleJointPositionGoal {
+	position : Double
+	min_duration : CommBasicObjects.CommTimeStamp
+	max_velocity : Double
+}
+
+CommObject Control_msgs_SingleJointPositionResult {
+	dummy : CommBasicObjects.CommVoid
+}
+
+CommObject Control_msgs_QueryCalibrationStateRequest {
+	dummy : CommBasicObjects.CommVoid
+}
+
+CommObject Control_msgs_QueryCalibrationStateResponse {
+	is_calibrated : Boolean
+}
+
+CommObject Control_msgs_QueryTrajectoryStateRequest {
+	time : CommBasicObjects.CommTimeStamp
+}
+
+CommObject Control_msgs_QueryTrajectoryStateResponse {
+	name : String[*]
+	position : Double[*]
+	velocity : Double[*]
+	acceleration : Double[*]
+}
+
+}

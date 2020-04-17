@@ -1,0 +1,182 @@
+ServiceDefRepository ROSControl_msgs version 1.0 {
+
+	ForkingServiceDefinition  FollowJointTrajectoryActionService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_FollowJointTrajectoryAction>
+	}
+
+	ForkingServiceDefinition  FollowJointTrajectoryActionFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_FollowJointTrajectoryActionFeedback>
+	}
+
+	ForkingServiceDefinition  FollowJointTrajectoryActionGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_FollowJointTrajectoryActionGoal>
+	}
+
+	ForkingServiceDefinition  FollowJointTrajectoryActionResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_FollowJointTrajectoryActionResult>
+	}
+
+	ForkingServiceDefinition  FollowJointTrajectoryFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_FollowJointTrajectoryFeedback>
+	}
+
+	ForkingServiceDefinition  FollowJointTrajectoryGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_FollowJointTrajectoryGoal>
+	}
+
+	ForkingServiceDefinition  FollowJointTrajectoryResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_FollowJointTrajectoryResult>
+	}
+
+	ForkingServiceDefinition  GripperCommandService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommand>
+	}
+
+	ForkingServiceDefinition  GripperCommandActionService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommandAction>
+	}
+
+	ForkingServiceDefinition  GripperCommandActionFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommandActionFeedback>
+	}
+
+	ForkingServiceDefinition  GripperCommandActionGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommandActionGoal>
+	}
+
+	ForkingServiceDefinition  GripperCommandActionResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommandActionResult>
+	}
+
+	ForkingServiceDefinition  GripperCommandFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommandFeedback>
+	}
+
+	ForkingServiceDefinition  GripperCommandGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommandGoal>
+	}
+
+	ForkingServiceDefinition  GripperCommandResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_GripperCommandResult>
+	}
+
+	ForkingServiceDefinition  JointControllerStateService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointControllerState>
+	}
+
+	ForkingServiceDefinition  JointJogService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointJog>
+	}
+
+	ForkingServiceDefinition  JointToleranceService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTolerance>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryActionService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryAction>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryActionFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryActionFeedback>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryActionGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryActionGoal>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryActionResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryActionResult>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryControllerStateService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryControllerState>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryFeedback>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryGoal>
+	}
+
+	ForkingServiceDefinition  JointTrajectoryResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_JointTrajectoryResult>
+	}
+
+	ForkingServiceDefinition  PidStateService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PidState>
+	}
+
+	ForkingServiceDefinition  PointHeadActionService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PointHeadAction>
+	}
+
+	ForkingServiceDefinition  PointHeadActionFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PointHeadActionFeedback>
+	}
+
+	ForkingServiceDefinition  PointHeadActionGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PointHeadActionGoal>
+	}
+
+	ForkingServiceDefinition  PointHeadActionResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PointHeadActionResult>
+	}
+
+	ForkingServiceDefinition  PointHeadFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PointHeadFeedback>
+	}
+
+	ForkingServiceDefinition  PointHeadGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PointHeadGoal>
+	}
+
+	ForkingServiceDefinition  PointHeadResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_PointHeadResult>
+	}
+
+	ForkingServiceDefinition  SingleJointPositionActionService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_SingleJointPositionAction>
+	}
+
+	ForkingServiceDefinition  SingleJointPositionActionFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_SingleJointPositionActionFeedback>
+	}
+
+	ForkingServiceDefinition  SingleJointPositionActionGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_SingleJointPositionActionGoal>
+	}
+
+	ForkingServiceDefinition  SingleJointPositionActionResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_SingleJointPositionActionResult>
+	}
+
+	ForkingServiceDefinition  SingleJointPositionFeedbackService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_SingleJointPositionFeedback>
+	}
+
+	ForkingServiceDefinition  SingleJointPositionGoalService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_SingleJointPositionGoal>
+	}
+
+	ForkingServiceDefinition  SingleJointPositionResultService {
+		PushPattern <DataType=ROSControl_msgs.Control_msgs_SingleJointPositionResult>
+	}
+
+	RequestAnswerServiceDefinition QueryCalibrationStateQueryService {
+		QueryPattern <
+			RequestType = ROSControl_msgs.Control_msgs_QueryCalibrationStateRequest
+			AnswerType = ROSControl_msgs.Control_msgs_QueryCalibrationStateResponse
+		>
+	}
+
+	RequestAnswerServiceDefinition QueryTrajectoryStateQueryService {
+		QueryPattern <
+			RequestType = ROSControl_msgs.Control_msgs_QueryTrajectoryStateRequest
+			AnswerType = ROSControl_msgs.Control_msgs_QueryTrajectoryStateResponse
+		>
+	}
+
+
+}
