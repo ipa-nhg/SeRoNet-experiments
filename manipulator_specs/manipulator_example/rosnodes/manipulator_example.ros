@@ -1,0 +1,48 @@
+PackageSet { package { 
+  CatkinPackage manipulator_examples { artifact {
+  Artifact robot_driver {
+      node Node { name robot_driver
+        serviceserver {
+          ServiceServer { name '/controller_manager/switch_controller' service 'controller_manager_msgs.SwitchController'},
+          ServiceServer { name '/arm_controller/query_state' service 'control_msgs.QueryTrajectoryState'},
+          ServiceServer { name '/controller_manager/list_controller_types' service 'controller_manager_msgs.ListControllerTypes'},
+          ServiceServer { name '/controller_manager/load_controller' service 'controller_manager_msgs.LoadController'},
+          ServiceServer { name '/controller_manager/list_controllers' service 'controller_manager_msgs.ListControllers'},
+          ServiceServer { name '/controller_manager/unload_controller' service 'controller_manager_msgs.UnloadController'},
+          ServiceServer { name '/controller_manager/reload_controller_libraries' service 'controller_manager_msgs.ReloadControllerLibraries'}}
+        publisher {
+          Publisher { name '/joint_states' message 'sensor_msgs.JointState'},
+          Publisher { name '/arm_controller/state' message 'control_msgs.JointTrajectoryControllerState'}}
+        subscriber {
+          Subscriber { name '/arm_controller/command' message 'trajectory_msgs.JointTrajectory'},
+          Subscriber { name '/arm_controller/joint_group_position_controller/command' message 'std_msgs.Float64MultiArray'}}
+        actionserver {
+          ActionServer { name '/arm_controller/follow_joint_trajectory/command' action 'control_msgs.FollowJointTrajectory'}} 
+        parameter {
+          Parameter { name '/arm_controller/constraints/elbow_joint/trajectory' type Double },
+          Parameter { name '/arm_controller/constraints/wrist_2_joint/trajectory' type Double },
+          Parameter { name '/robot_state_publisher/tf_prefix' type String },
+          Parameter { name '/arm_controller/constraints/elbow_joint/goal' type Double },
+          Parameter { name '/arm_controller/state_publish_rate' type Integer },
+          Parameter { name '/arm_controller/type' type String },
+          Parameter { name '/arm_controller/constraints/goal_time' type Double },
+          Parameter { name '/arm_controller/constraints/wrist_3_joint/trajectory' type Double },
+          Parameter { name '/arm_controller/constraints/stopped_velocity_tolerance' type Double },
+          Parameter { name '/arm_controller/constraints/shoulder_pan_joint/trajectory' type Double },
+          Parameter { name '/robot_description' type String },
+          Parameter { name '/arm_controller/constraints/wrist_1_joint/trajectory' type Double },
+          Parameter { name '/arm_controller/constraints/shoulder_pan_joint/goal' type Double },
+          Parameter { name '/robot_state_publisher/publish_frequency' type Double },
+          Parameter { name '/arm_controller/action_monitor_rate' type Integer },
+          Parameter { name '/arm_controller/constraints/wrist_2_joint/goal' type Double },
+          Parameter { name '/joint_group_position_controller/joints' type List {String,String,String,String,String,String}},
+          Parameter { name '/joint_group_position_controller/type' type String },
+          Parameter { name '/arm_controller/constraints/shoulder_lift_joint/goal' type Double },
+          Parameter { name '/arm_controller/joints' type List {String,String,String,String,String,String}},
+          Parameter { name '/arm_controller/stop_trajectory_duration' type Double },
+          Parameter { name '/arm_controller/constraints/shoulder_lift_joint/trajectory' type Double },
+          Parameter { name '/joint_state_controller/type' type String },
+          Parameter { name '/arm_controller/constraints/wrist_1_joint/goal' type Double },
+          Parameter { name '/joint_state_controller/publish_rate' type Integer },
+          Parameter { name '/arm_controller/constraints/wrist_3_joint/goal' type Double }}}}
+}}}}
